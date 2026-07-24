@@ -1,199 +1,265 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <title>상암 유흥 추천 가이드 — 현지인·관광객을 위한 맞춤 선택 안내</title>
+    <meta name="description" content="상암 유흥 지역을 처음 찾는 분들을 위해 안전·편리·다양성을 기준으로 한 맞춤 선택 가이드를 제공합니다. 현지 트렌드와 이용 전 체크리스트까지 한눈에 확인하세요.">
+    <meta name="keywords" content="상암, 유흥, 가이드, 현지인, 관광객, 선택 기준, 체크리스트, 밤문화">
+    <link rel="canonical" href="https://sangam-nightlife-note.pub-jongno-pro.xyz/">
+    <meta property="og:title" content="상암 유흥 추천 가이드 — 현지인·관광객을 위한 맞춤 선택 안내">
+    <meta property="og:description" content="상암 유흥 지역을 처음 찾는 분들을 위해 안전·편리·다양성을 기준으로 한 맞춤 선택 가이드를 제공합니다. 현지 트렌드와 이용 전 체크리스트까지 한눈에 확인하세요.">
+    <meta property="og:url" content="https://sangam-nightlife-note.pub-jongno-pro.xyz/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="상암 유흥 추천 가이드 — 현지인·관광객을 위한 맞춤 선택 안내">
+    <meta name="twitter:description" content="상암 유흥 지역을 처음 찾는 분들을 위해 안전·편리·다양성을 기준으로 한 맞춤 선택 가이드를 제공합니다. 현지 트렌드와 이용 전 체크리스트까지 한눈에 확인하세요.">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-ledger-sepia">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "상암 유흥 지역은 어느 시간대에 가장 활기찬가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "대부분의 바와 클럽은 저녁 8시 이후부터 새벽 2시까지가 가장 활기찬 시간대입니다. 특히 금요일과 토요일은 인파가 많으니 사전 예약을 권장합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "첫 방문 시 주의해야 할 점은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "입장 전 신분증을 반드시 지참하고, 영업시간 및 연령 제한을 사전에 확인하세요. 또한 과음은 삼가고, 귀가 시 대중교통 운행 시간을 체크하는 것이 안전합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "관광객에게 적합한 유흥 장소는 어디인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "관광객은 주로 가시성이 높은 메인 스트리트에 위치한 라운지와 테마 바를 선호합니다. 영어 안내가 가능한 곳을 선택하면 소통이 원활합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "예산에 맞는 선택지는 어떻게 고르면 좋나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "예산이 한정된 경우, 입장료가 없는 라운지나 호프바를 먼저 검토하고, 음료 가격표를 확인해 평균 소비 수준을 파악하세요."
+          }
+        }
+      ]
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "author": {
+        "@type": "Person",
+        "name": "이현우"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "상암 유흥 추천 가이드"
+      }
     }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        :root {
+            --gap: 48px;
+            --section-gap: 120px;
+            --padding: 72px;
+            --bg-warm: #fafaf7;
+            --accent-amber: #c8960c;
+            --primary-dark: #1c1108;
+            --secondary-light: #fdf8f0;
+            --font-mono: "IBM Plex Mono", monospace;
+            --font-serif: "Noto Serif KR", serif;
+        }
+        body {
+            margin:0;
+            font-family: var(--font-mono);
+            background: var(--bg-warm);
+            color: var(--primary-dark);
+            line-height:1.6;
+        }
+        a { color: var(--primary-dark); text-decoration:none; }
+        .v-card-ny5h { padding: var(--padding) 0; border-bottom: 2px solid var(--primary-dark); }
+        .t-side-e6zn { max-width:960px; margin:auto; display:flex; justify-content:space-between; align-items:center; }
+        .t-side-e6zn ul { list-style:none; display:flex; gap:var(--gap); margin:0; padding:0; }
+        .t-side-e6zn li { font-size:0.9rem; }
+        .t-nav-yup7 { display:none; }
+        .v-btn-xmwt {
+            position:relative;
+            height:80vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            overflow:hidden;
+            border-bottom:2px solid var(--primary-dark);
+        }
+        .v-btn-xmwt::after {
+            content:"";
+            position:absolute;
+            top:0;
+            right:0;
+            width:50%;
+            height:100%;
+            background: var(--accent-amber);
+        }
+        .v-btn-xmwt h1 {
+            font-family: var(--font-serif);
+            font-size:4rem;
+            margin:0;
+            z-index:1;
+            text-align:center;
+        }
+        .v-btn-xmwt p {
+            font-size:1.2rem;
+            margin-top:12px;
+            z-index:1;
+            text-align:center;
+        }
+        .k-body-ubrz { max-width:960px; margin:auto; padding:0 24px; }
+        .m-side-5v2l { padding: var(--section-gap) 0; }
+        .m-side-5v2l h2 {
+            font-family: var(--font-serif);
+            font-size:2.2rem;
+            margin-bottom:24px;
+            border-left:4px solid var(--primary-dark);
+            padding-left:12px;
+        }
+        .m-side-5v2l ul {
+            list-style:none;
+            padding-left:0;
+        }
+        .m-side-5v2l li {
+            position:relative;
+            padding-left:24px;
+            margin-bottom:12px;
+        }
+        .m-side-5v2l li::before {
+            content:"▹";
+            position:absolute;
+            left:0;
+            color: var(--accent-amber);
+        }
+        .r-top-2pyj {
+            border:none;
+            border-top:2px solid var(--primary-dark);
+            margin: var(--gap) 0;
+        }
+        .k-list-z79e {
+            border-left:2px solid var(--primary-dark);
+            padding-left:12px;
+            margin-top:var(--gap);
+        }
+        .q-box-xb6i dt {
+            font-weight:bold;
+            margin-top:var(--gap);
+        }
+        .q-box-xb6i dd {
+            margin-left:0;
+            margin-top:8px;
+        }
+        .n-body-bqsw {
+            background: var(--secondary-light);
+            color: var(--primary-dark);
+            text-align:center;
+            padding: var(--padding) 0;
+            font-size:0.9rem;
+            border-top:2px solid var(--primary-dark);
+        }
+        @media (max-width:768px) {
+            .t-side-e6zn ul { display:none; }
+            .t-nav-yup7 { display:block; }
+            #nav-toggle:checked + label + ul { display:flex; flex-direction:column; gap:var(--gap); }
+            .v-btn-xmwt h1 { font-size:2.5rem; }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+    <header class="v-card-ny5h">
+        <nav class="t-side-e6zn">
+            <div class="n-side-53e1"><strong>상암 유흥 추천 가이드</strong></div>
+            <input type="checkbox" id="nav-toggle" hidden>
+            <label for="nav-toggle" class="t-nav-yup7">☰ 메뉴</label>
+            <ul>
+                <li><a href="#criteria">선택 기준</a></li>
+                <li><a href="#checklist">이용 전 체크리스트</a></li>
+                <li><a href="#suitability">조건별 적합성</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
 
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 화곡 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 화곡 셔츠룸 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
+    <section class="v-btn-xmwt">
+        <div>
+            <h1>상암 유흥의 모든 것</h1>
+            <p>현지인과 관광객을 위한 맞춤형 가이드</p>
         </div>
-      </div>
+    </section>
+
+    <main class="k-body-ubrz">
+        <section id="criteria" class="m-side-5v2l">
+            <h2>선택 기준</h2>
+            <ul>
+                <li>안전성 – 영업시간, 출입 관리, 주변 환경</li>
+                <li>편리성 – 대중교통 접근성, 주차 시설 유무</li>
+                <li>다양성 – 음악 장르, 분위기, 인원 규모</li>
+                <li>가격대 – 평균 음료 가격, 입장료 여부</li>
+            </ul>
+            <hr class="r-top-2pyj">
+        </section>
+
+        <section id="checklist" class="m-side-5v2l">
+            <h2>이용 전 체크리스트</h2>
+            <ul>
+                <li>신분증 지참 여부 확인</li>
+                <li>운영 시간과 연령 제한 사전 확인</li>
+                <li>음주량 조절 및 교통 수단 계획</li>
+                <li>예약 필요 여부와 최소 인원 파악</li>
+            </ul>
+            <hr class="r-top-2pyj">
+        </section>
+
+        <section id="suitability" class="m-side-5v2l">
+            <h2>조건별 적합성</h2>
+            <ul>
+                <li>첫 방문자 – 가시성이 좋은 메인 스트리트 라운지</li>
+                <li>소규모 모임 – 프라이빗 룸 제공 바</li>
+                <li>심야 파티 – 새벽까지 운영하는 클럽</li>
+                <li>예산 절감 – 입장료 없는 호프바 및 테라스 바</li>
+            </ul>
+            <hr class="r-top-2pyj">
+        </section>
+
+        <section id="faq" class="m-side-5v2l q-box-xb6i">
+            <h2>자주 묻는 질문</h2>
+            <dl>
+                <dt>상암 유흥 지역은 어느 시간대에 가장 활기찬가요?</dt>
+                <dd>대부분의 바와 클럽은 저녁 8시 이후부터 새벽 2시까지가 가장 활기찬 시간대입니다. 특히 금요일과 토요일은 인파가 많으니 사전 예약을 권장합니다.</dd>
+                <dt>첫 방문 시 주의해야 할 점은 무엇인가요?</dt>
+                <dd>입장 전 신분증을 반드시 지참하고, 영업시간 및 연령 제한을 사전에 확인하세요. 또한 과음은 삼가고, 귀가 시 대중교통 운행 시간을 체크하는 것이 안전합니다.</dd>
+                <dt>관광객에게 적합한 유흥 장소는 어디인가요?</dt>
+                <dd>관광객은 주로 가시성이 높은 메인 스트리트에 위치한 라운지와 테마 바를 선호합니다. 영어 안내가 가능한 곳을 선택하면 소통이 원활합니다.</dd>
+                <dt>예산에 맞는 선택지는 어떻게 고르면 좋나요?</dt>
+                <dd>예산이 한정된 경우, 입장료가 없는 라운지나 호프바를 먼저 검토하고, 음료 가격표를 확인해 평균 소비 수준을 파악하세요.</dd>
+            </dl>
+        </section>
+
+        <aside class="k-list-z79e">
+            <p><strong>작성자: 이현우</strong> – 상암 지역 유흥 정보를 5년간 정리해온 로컬 가이드. 현장 경험과 데이터 분석을 바탕으로 신뢰성 높은 정보를 제공합니다.</p>
+        </aside>
     </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+
+    <footer class="n-body-bqsw">
+        © 2026 상암 유흥 추천 가이드. All rights reserved.
     </footer>
-  </div>
 </body>
 </html>
