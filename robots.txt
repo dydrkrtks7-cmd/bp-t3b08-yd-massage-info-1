@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://sangam-nightlife-note.pub-jongno-pro.xyz/sitemap.xml
+Sitemap: https://sangam-nightlife-note.pub-jongno-pro.xyz/sitemap-pages.xml
